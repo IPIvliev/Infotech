@@ -1,0 +1,77 @@
+<div id="navigation" class="wrapper">
+  <div class="navbar  navbar-static-top"> 
+    
+    <!--Header & Branding region-->
+    <div class="header">
+      <div class="header-inner container">
+        <div class="row-fluid">
+          <div class="span6"> 
+            <!--branding/logo--> 
+            <a class="brand" href="index.html" title="Home">
+            <h1><span>Инфоком</span>-<span></span><span>НН</span></h1>
+            </a>
+            <div class="slogan">Ремонт компьютеров и ноутбуков</div>
+          </div>
+          
+          <!--header rightside-->
+          <div class="span6">
+
+            
+            <!--social media icons-->
+            <div class="social-media pull-right"> 
+              <!--@todo: replace with company social media details--> 
+              <a href="#"><i class="icon-twitter"></i></a> <a href="#"><i class="icon-facebook"></i></a> <a href="#"><i class="icon-linkedin"></i></a> <a href="#"><i class="icon-google-plus"></i></a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="navbar-inner"> 
+        
+        <!--mobile collapse menu button--> 
+        <a class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+        
+        <!--user menu-->
+        <ul class="nav user-menu pull-right">
+          <li><a href="signup.html" class="btn btn-primary signup">Зарегистрироваться</a></li>
+          <li class="dropdown"> <a href="login.html" class="btn btn-primary dropdown-toggle login" id="login-drop" data-toggle="dropdown">Логин</a>
+            <div class="dropdown-menu" role="menu" aria-labelledby="login-drop">
+              <form action="login.html" class="form-inline" id="login-form-drop" role="menuitem" />
+                <div class="input-append">
+                  <input type="text" class="input-small email" placeholder="Email" />
+                  <input type="password" class="input-small password" placeholder="Пароль" />
+                  <input type="button" class="btn btn-primary login" value="Войти" />
+                </div>
+              </form>
+              <span class="divider" role="menuitem"></span> <small role="menuitem">Нет регистрации? <a href="#" class="signup">Зарегистрируйтесь сейчас!</a></small> <small role="menuitem"><a href="#">Забыли пароль?</a></small> </div>
+          </li>
+        </ul>
+        
+        <!--everything within this div is collapsed on mobile-->
+        <div class="nav-collapse collapse"> 
+          
+          <!--main navigation-->
+          <ul class="nav" id="main-menu">
+            <li class="home-link"><a href="index.html"><i class="icon-home hidden-phone"></i><span class="visible-phone">Главная</span></a></li>
+            <li><a href="about.html" class="menu-item">О нас</a></li>
+            <li class="dropdown"><a href="features.html" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Услуги *</a> 
+              <!-- Dropdown Menu -->
+              <ul class="dropdown-menu mega-menu" role="menu" aria-labelledby="features-drop">
+                <li class="mega-menu-wrapper" role="menuitem"> <span class="menu-title">Наши услуги</span>
+                  <ul class="row-fluid" role="menu">
+                    <li class="span4" role="menuitem"> <a href="#"><img src="/features/feature-1.png" alt="Feature 1" /></a> <a href="#" tabindex="-1" class="menu-item">Очистка</a> <span>Если ваш ноутбук греется, тащите его к нам!</span> </li>
+                    <li class="span4" role="menuitem"> <a href="#"><img src="/features/feature-2.png" alt="Feature 2" /></a> <a href="#" tabindex="-1" class="menu-item">Замена матрицы</a> <span>Представления не имею, что это такое, но, видимо, люди её ненавидят и бьют.</span> </li>
+                    <li class="span4" role="menuitem"> <a href="#"><img src="/features/feature-4.png" alt="Feature 4" /></a> <a href="#" tabindex="-1" class="menu-item">Установка Windows</a> <span>Установим!</span> </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="news.html" class="menu-item">Новости</a></li>
+            <li><a href="contact.html" class="menu-item">Контакты</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse --> 
+      </div>
+    </div>
+  </div>
+</div>
