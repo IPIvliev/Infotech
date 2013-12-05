@@ -1,2 +1,34 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<% provide(:title, 'Контакты') %>
+
+<div id="content">
+  <div class="container">
+    <div class="row"> 
+      <!-- sidebar -->
+		<%= render '/shared/leftmenu' %>
+      
+      <!--main content-->
+      <div class="span9">
+        <h2 class="title-divider"><span>Контакты <span class="de-em">ООО "Инфоком-НН"</span></span> <small>Как с нами связаться</small></h2>
+        <div class="row-fluid">
+          <div class="span6">
+            <form id="contact-form" action="#" />
+              <input type="text" class="span11" placeholder="Ваше имя" />
+              <br />
+              <input type="email" class="span11" placeholder="Email" />
+              <br />
+              <textarea rows="12" class="span11" placeholder="Текст сообщения"></textarea>
+              <br />
+              <input type="button" class="btn btn-primary" value="Отправить" />
+            </form>
+          </div>
+          <div class="span6">
+            <p><abbr title="Телефон"><i class="icon-phone"></i></abbr> 414-89-19</p>
+            <p><abbr title="Email"><i class="icon-envelope"></i></abbr> infocom-nn@yandex.ru</p>
+            <p><abbr title="Наш адрес"><i class="icon-home"></i></abbr> г. Н. Новгород, ул. Бекетова, 15, оф. 4</p>
+            <p><a href="http://maps.yandex.ru/?um=7ZgV8lERRm6z-O1haBTaybHA_SXEmdVH&ll=44.008715%2C56.290641&spn=0.088062%2C0.025776&z=14&l=map"> <img src="/img/map.png" alt="Location map" class="img-polaroid" /> </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

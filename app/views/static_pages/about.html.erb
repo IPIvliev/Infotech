@@ -1,2 +1,33 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<% provide(:title, 'О нас') %>
+
+<div id="content">
+  <div class="container" id="about">
+    <div class="row"> 
+
+		<%= render '/shared/leftmenu' %>
+      
+      <!--main content-->
+      <div class="span9">
+        <h2 class="title-divider"><span>О <span class="de-em">Компании</span></span> <smallНаши цели и задачи</small></h2>
+        
+        <!-- About company -->
+        <h4>Как всё начиналось</h4>
+        <p>Elit pellentesque dolor facilisis aenean eu tempor, phasellus lundium risus dolor, augue, ridiculus nascetur odio ridiculus? Hac ac, adipiscing ut dapibus. Adipiscing cras in? Magna nisi augue odio! Pellentesque magnis? Lacus integer magnis purus sed mus lorem aliquam lectus, placerat pellentesque quis, nunc urna turpis lorem. Etiam velit, augue sed magnis placerat! In cras, dignissim lorem, porttitor in velit in, nisi vut a cursus cum, odio sagittis nisi turpis? Mus penatibus non, pulvinar porttitor arcu hac ut et ac integer? Ultricies est etiam sit. Urna ridiculus facilisis pulvinar, ultrices augue? Parturient velit non tincidunt sit sagittis pulvinar phasellus rhoncus hac! Sit porta. Tristique, hac. Porttitor adipiscing ac. Ac tincidunt a porttitor natoque auctor ultricies! Proin nunc scelerisque? Habitasse adipiscing? Cursus.</p>
+        <h4>Наша миссия</h4>
+        <p>Elit pellentesque dolor facilisis aenean eu tempor, phasellus lundium risus dolor, augue, ridiculus nascetur odio ridiculus? Hac ac, adipiscing ut dapibus. Adipiscing cras in? Magna nisi augue odio! Pellentesque magnis? Lacus integer magnis purus sed mus lorem aliquam lectus, placerat pellentesque quis, nunc urna turpis lorem. Etiam velit, augue sed magnis placerat! In cras, dignissim lorem, porttitor in velit in, nisi vut a cursus cum, odio sagittis nisi turpis? Mus penatibus non, pulvinar porttitor arcu hac ut et ac integer? Ultricies est etiam sit. Urna ridiculus facilisis pulvinar, ultrices augue? Parturient velit non tincidunt sit sagittis pulvinar phasellus rhoncus hac! Sit porta. Tristique, hac. Porttitor adipiscing ac. Ac tincidunt a porttitor natoque auctor ultricies! Proin nunc scelerisque? Habitasse adipiscing? Cursus.</p>
+        <blockquote>
+			<p>"It's totally awesome, we're could imagine life without it!"</p>
+			<small><img src="/team/jimi.jpg" alt="Jimi Bloggs" class="img-circle" /> Jimi Bloggs <span class="spacer">/</span> <a href="#">@mrjimi</a></small>
+		</blockquote>
+        <h4>Цель компании</h4>
+        <p>Elit pellentesque dolor facilisis aenean eu tempor, phasellus lundium risus dolor, augue, ridiculus nascetur odio ridiculus? Hac ac, adipiscing ut dapibus. Adipiscing cras in? Magna nisi augue odio! Pellentesque magnis? Lacus integer magnis purus sed mus lorem aliquam lectus, placerat pellentesque quis, nunc urna turpis lorem. Etiam velit, augue sed magnis placerat! In cras, dignissim lorem, porttitor in velit in, nisi vut a cursus cum, odio sagittis nisi turpis? Mus penatibus non, pulvinar porttitor arcu hac ut et ac integer? Ultricies est etiam sit. Urna ridiculus facilisis pulvinar, ultrices augue? Parturient velit non tincidunt sit sagittis pulvinar phasellus rhoncus hac! Sit porta. Tristique, hac. Porttitor adipiscing ac. Ac tincidunt a porttitor natoque auctor ultricies! Proin nunc scelerisque? Habitasse adipiscing? Cursus.</p>
+
+        <!--Статистика-->
+			<%= render "/shared/stats" %>
+        
+        <!--Customer testimonial-->
+			<%= render "/shared/recommend" %>
+      </div>
+    </div>
+  </div>
+</div>

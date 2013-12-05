@@ -53,21 +53,10 @@
           <!--main navigation-->
           <ul class="nav" id="main-menu">
             <li class="home-link"><a href="index.html"><i class="icon-home hidden-phone"></i><span class="visible-phone">Главная</span></a></li>
-            <li><a href="about.html" class="menu-item">О нас</a></li>
-            <li class="dropdown"><a href="features.html" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Услуги *</a> 
-              <!-- Dropdown Menu -->
-              <ul class="dropdown-menu mega-menu" role="menu" aria-labelledby="features-drop">
-                <li class="mega-menu-wrapper" role="menuitem"> <span class="menu-title">Наши услуги</span>
-                  <ul class="row-fluid" role="menu">
-                    <li class="span4" role="menuitem"> <a href="#"><img src="/features/feature-1.png" alt="Feature 1" /></a> <a href="#" tabindex="-1" class="menu-item">Очистка</a> <span>Если ваш ноутбук греется, тащите его к нам!</span> </li>
-                    <li class="span4" role="menuitem"> <a href="#"><img src="/features/feature-2.png" alt="Feature 2" /></a> <a href="#" tabindex="-1" class="menu-item">Замена матрицы</a> <span>Представления не имею, что это такое, но, видимо, люди её ненавидят и бьют.</span> </li>
-                    <li class="span4" role="menuitem"> <a href="#"><img src="/features/feature-4.png" alt="Feature 4" /></a> <a href="#" tabindex="-1" class="menu-item">Установка Windows</a> <span>Установим!</span> </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="news.html" class="menu-item">Новости</a></li>
-            <li><a href="contact.html" class="menu-item">Контакты</a></li>
+            <li class="<%=is_active('about')%>"><a href="about.html" class="menu-item">О нас</a></li>
+            <li class="<%=is_active('services')%>"><a href="services.html" class="menu-item">Услуги и цены</a></li>
+            <li class="<%=is_active('news')%>"><a href="news.html" class="menu-item">Новости</a></li>
+            <li class="<%=is_active('contact')%>"><a href="contact.html" class="menu-item">Контакты</a></li>
           </ul>
         </div>
         <!--/.nav-collapse --> 

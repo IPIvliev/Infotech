@@ -13,4 +13,8 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def matrice
+    render :template => "/static_pages/services/matrice"
+  end
 end

@@ -48,94 +48,14 @@
     </div>
     
     <!--Pricing Table-->
-    <div class="block">
-      <h2 class="title-divider"><span>Популярные <span class="de-em">Услуги</span></span> <small>Наиболее востребовано среди наших клиентов</small></h2>
-      <div class="row pricing-stack">
-        <div class="span3">
-          <div class="well">
-            <h3 class="title">Замена матрицы</h3>
-            <p class="price"><span class="fancy">50 000 руб.</span></p>
-            <ul class="unstyled points">
-              <li>Любой ноутбук</li>
-              <li>Срок доставки не более 300-х дней</li>
-              <li>Гарантия отсутствует</li>
-              <li>Может быть будет работать</li>
-            </ul>
-            <a class="btn btn-primary">Заказать</a> </div>
-        </div>
-        <div class="span3">
-          <div class="well active">
-            <h3 class="title"><span class="em">Очистка</span> <span class="fancy">Охлаждения</span></h3>
-            <p class="price"><span class="digits">10 000</span> <span class="currency">руб.</span> </p>
-            <ul class="unstyled points">
-              <li>Диагностика</li>
-              <li>Разборка</li>
-              <li>Очистка</li>
-              <li>Сборка</li>
-            </ul>
-            <a class="btn btn-primary">Заказать</a> </div>
-        </div>
-        <div class="span3">
-          <div class="well active">
-            <h3 class="title"><span class="em">Диагностика</span> <span class="fancy">Неисправностей</span></h3>
-            <p class="price"><span class="digits">5 000</span> <span class="currency">руб.</span></p>
-            <ul class="unstyled points">
-              <li>Посмотрим</li>
-              <li>Включим</li>
-              <li>Выпьем чай</li>
-              <li>Выключим</li>
-            </ul>
-            <a class="btn btn-primary">Заказать</a> </div>
-        </div>
-        <div class="span3">
-          <div class="well">
-            <h3 class="title">Установка <span class="fancy">Windows</span></h3>
-            <p class="price"> <span class="digits">1 999</span> <span class="currency">руб.</span></p>
-            <ul class="unstyled points">
-              <li>Как всегда</li>
-              <li>И ещё раз</li>
-              <li>Очень здорово</li>
-              <li>Не работает</li>
-            </ul>
-            <a class="btn btn-primary">Заказать</a> </div>
-        </div>
-      </div>
-      <div class="row-fluid"> 
-        <!-- Plan features -->
-        <div class="well well-mini pull-center">
-          <h4 class="inline-el pad-right"><span>Все услуги <span class="de-em">Включают</span>:</span></h4>
-          <p class="inline-el pad-left muted">Гарантию возврата денег в течении 90 дней <span class="spacer">//</span> 24/7 поддержку <span class="spacer">//</span> Доставку ремонтируемой техники по 300 руб. в пределах города<span class="spacer">//</span> Помощь в чём-нибудь <span class="spacer">//</span> Массовые разрушения</p>
-        </div>
-      </div>
-    </div>
+  <h2 class="title-divider"><span>Популярные <span class="de-em">Услуги</span></span> <small>Наиболее востребовано среди наших клиентов</small></h2>
+    <%= render "/shared/services" %>
+
+
+    <!--Включение-->
+    <%= render "/shared/include" %>
     
     <!--Customer testimonial-->
-    <div class="block testimonials margin-top-large">
-      <h2 class="title-divider"><span>Отзывы <span class="de-em">Клиентов</span></span> <small>99% наших клиентов рекомендуют нас друзьям!</small></h2>
-      <div class="row">
-        <div class="span4">
-          <blockquote>
-            <p>"Они что-то сделали и теперь не работает ничего!"</p>
-            <small><img src="/team/jimi.jpg" alt="Jimi Bloggs" class="img-circle" /> Иван Абрамович <span class="spacer">/</span> <a href="#">@mrivan</a></small> </blockquote>
-        </div>
-        <div class="span4">
-          <blockquote>
-            <p>"Уважуха. Всё чётко! Парни, молодчики. Даже семок отсыпали."</p>
-            <small><img src="/team/jobs.jpg" alt="Jimi Bloggs" class="img-circle" /> Не Джобс <span class="spacer">/</span> <a href="#">Разработчик Apple</a></small> </blockquote>
-        </div>
-        <div class="span4">
-          <blockquote>
-            <p>"Теперь я могу ходить! Потрясающе, спасибо вам!!!"</p>
-            <small><img src="/team/adele.jpg" alt="Adele Bloggs" class="img-circle" /> Охранник с Бекетова <span class="spacer">/</span> <a href="#">@iamadele</a></small> </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="content-below" class="wrapper">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="upsell"> <small class="muted">Доставка 300 рублей <span class="spacer">//</span> Гарантия качества <span class="spacer">//</span> 24/7 поддержка <span class="spacer">//</span> Доступные цены <span class="spacer">//</span> </small> <a href="pricing.html" class="btn btn-primary">Обратись к нам сейчас! <i class="icon-arrow-right"></i></a> </div>
-    </div>
+      <%= render "/shared/recommend" %>
   </div>
 </div>
